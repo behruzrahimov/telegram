@@ -1,0 +1,48 @@
+.users {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding-left: 25px;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  color: #fff;
+  border-bottom: 1px solid #00000088;
+}
+
+.user:hover {
+  background-color: #1f7a806f;
+}
+
+.icon_users {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 32px;
+  background-color: black;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.name_surname_black {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: 10px;
+  width: 80%;
+}
+
+.black_table {
+  display: flex;
+}

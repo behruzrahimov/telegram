@@ -1,0 +1,74 @@
+.message-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  position: sticky;
+  bottom: 0;
+  background-color: #17212b;
+}
+
+.message-input input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.icon-attachment {
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  font-size: 25px;
+}
+
+.icon-attachment:hover {
+  color: #8181e6df;
+}
+
+.icon-smile-o {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  font-size: 25px;
+}
+
+.icon-smile-o:hover {
+  color: #8181e6df;
+}
+
+.message-input button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.message-input button:hover {
+  color: #8181e6df;
+}

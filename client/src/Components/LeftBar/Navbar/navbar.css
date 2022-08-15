@@ -1,0 +1,219 @@
+.menu {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #00000000;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: 99;
+  transition: all 0.1s linear;
+}
+
+.menu.active {
+  top: 0;
+}
+
+.menu .nav_menu {
+  position: absolute;
+  width: 25%;
+  top: -100%;
+  left: 20px;
+  opacity: 0;
+  background: #353b3b3c;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  padding-bottom: 25px;
+}
+
+.menu.active .nav_menu {
+  opacity: 1;
+  top: 60px;
+}
+
+.nav_menu_header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 125px;
+  color: #fff;
+  border-bottom: 1px solid black;
+}
+
+.img_user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(31, 121, 190);
+  margin: 20px;
+}
+
+.name_user {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  font-size: 15px;
+}
+
+.name_user p {
+  font-weight: 500;
+}
+
+.number_user {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #637b9a;
+}
+
+.buttom {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 90px;
+  left: 90%;
+  cursor: pointer;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s linear;
+}
+
+.buttom span {
+  width: 8px;
+  height: 2px;
+  background-color: #fff;
+  margin: 0;
+}
+
+.buttom span:nth-child(1) {
+  transform: translateX(3px) rotate(40deg);
+}
+
+.buttom span:nth-child(2) {
+  transform: translateX(1px) rotate(-40deg);
+}
+
+.buttom.active {
+  transform: rotate(180deg);
+}
+
+.add_acount {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  border-bottom: 1px solid black;
+  transition: all 0.2s linear;
+  color: #fff;
+  font-size: 15px;
+}
+
+.add_acount .add_ac {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  cursor: pointer;
+  padding-left: 20px;
+  transition: all 0.1s linear;
+  border-radius: 5px;
+}
+
+.add_acount .add_ac:hover {
+  background-color: #00000086;
+}
+
+.add_acount .add_ac p {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.add_acount.active {
+  height: 40px;
+  opacity: 1;
+}
+
+.icon-plus {
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+}
+
+.components_modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.component {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  cursor: pointer;
+  padding-left: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.component .component_child {
+  display: flex;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  align-items: center;
+}
+
+.component:hover {
+  background-color: #21ddc750;
+  transition: all 0.1s linear;
+}
+
+.component .component_child p {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.component:nth-child(1) .component_child p {
+  background-color: #56b3f5;
+}
+
+.component:nth-child(2) .component_child p {
+  background-color: #ed9f20;
+}
+
+.component:nth-child(3) .component_child p {
+  background-color: #f06964;
+}
+
+.component:nth-child(4) .component_child p {
+  background-color: #6dc534;
+}
+
+.component:nth-child(5) .component_child p {
+  background-color: #56b3f5;
+}
+
+.component:nth-child(6) .component_child p {
+  background-color: #b580e2;
+}
